@@ -1,0 +1,64 @@
+/*You must implement the following breakpoints that will be considered desktop, tablet, and mobile. The browser should display a desktop version of the site when the width of the browser window is 992px and above. Tablet view should appear only if the width of the browser window is between 768px and 991px, inclusively. Mobile view should appear only if the width of the browser is equal to or less than 767px.*/
+div{
+	padding: 5px
+}
+
+h2{
+	text-align: center;
+}
+
+section{
+	background-color: gray; 
+	margin: 1%;
+
+}
+
+section label{
+	margin-right: -10px;
+	margin-top: -10px;
+	border: 1px solid black;
+	background-color: yellow;
+	text-align: center;
+	padding: 0 10px 0 10px;
+	display: inline-block;
+	float: right;
+}
+
+section div{
+	clear: both;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  section {
+  	border: 1px solid black;
+    width: 31%;
+    float: left;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+  }
+  
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 992px) {
+  section {
+  	border: 1px solid black;
+    width: 48%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+/********** Medium devices only **********/
+@media (max-width: 767px) {
+  section {
+  	border: 1px solid black;
+    width: 98%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
